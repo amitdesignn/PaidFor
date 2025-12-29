@@ -26,6 +26,11 @@ jobs:
       
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+        
+      - name: Install Android NDK
+        run: |
+          echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --install "ndk;27.1.12297006"
+          echo "ANDROID_NDK_HOME=$ANDROID_HOME/ndk/27.1.12297006" >> $GITHUB_ENV
       
       - name: Install dependencies
         run: npm install --legacy-peer-deps
