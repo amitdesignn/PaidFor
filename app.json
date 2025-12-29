@@ -1,0 +1,9 @@
+{
+  "name": "PaidFor",
+  "displayName": "PaidFor",
+  "extra": {
+    "eas": {
+      "projectId": "3cc36287-324a-473d-8488-0870f6c7b4a7"
+    }
+  }
+}
